@@ -30,7 +30,7 @@ It includes a **timer-based modal popup** that appears for **10 seconds** and sh
 3. Run the website by opening **index.html** in your browser.
 
 ## Author
-##### Danish Ameer
+### Danish Ameer
 **Web Developer**
 
 A fresher exploring opportunities in web development and freelancing.
