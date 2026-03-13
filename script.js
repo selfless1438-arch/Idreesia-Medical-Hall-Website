@@ -1,12 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector("#loader-cont");
+
+  loader.classList.add("active");
+  setTimeout(() => {
+    loader.classList.remove("active");
+  }, 1000); // example delay
+});
+
 const slides = document.querySelectorAll('.slider');
 const container = document.querySelector('.slider-cont');
 let index = 0;
-
-const loader = document.querySelector("#loader-cont");
-loader.classList.add("active");
-document.addEventListener("DOMContentLoaded", () => {
-  loader.classList.remove("active");
-});
 
 function showSlide() {
   container.style.transform = `translateX(-${index * 100}%)`;
