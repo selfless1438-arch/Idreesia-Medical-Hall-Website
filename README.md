@@ -1,8 +1,8 @@
-# Timer Based Random Offer Modal Website
+# Website of Idressia Medical Hall
 
 ## Project Overview
 This project is a simple front-end website built using **HTML, CSS, and JavaScript**.  
-It includes a **timer-based modal popup** that appears after **10 seconds** and shows **random shop offers** to the user.
+It includes a **timer-based modal popup** that appears for **10 seconds** and shows **random shop offers** to the user.
 
 ## Features
 - Timer-based modal popup (10 seconds)
@@ -18,7 +18,7 @@ It includes a **timer-based modal popup** that appears after **10 seconds** and 
 ## How It Works
 1. User opens the website.
 2. A **10-second timer** starts.
-3. After 10 seconds, a **modal popup** appears.
+3. After 10 seconds, a **modal popup** diappears.
 4. The modal shows a **random shop offer advertisement**.
 
 
@@ -30,6 +30,7 @@ It includes a **timer-based modal popup** that appears after **10 seconds** and 
 3. Run the website by opening **index.html** in your browser.
 
 ## Author
-**Danish Ameer**
+### Danish Ameer
+**Web Developer**
 
 A fresher exploring opportunities in web development and freelancing.
