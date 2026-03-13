@@ -78,14 +78,14 @@ let offers = [
   {
     id: 'HB1',
     name: 'Collagen + B-12',
-    img: 'herbiotic_images/1.WebP',
+    img: 'herbiotic_images/1.webp',
     disc: '7%',
 
   },
   {
     id: 'HB2',
     name: 'Biotin Plus + Biotin Shampoo',
-    img: 'herbiotic_images/2.WebP',
+    img: 'herbiotic_images/2.webp',
     disc: '5%',
 
   },
