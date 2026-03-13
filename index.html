@@ -398,6 +398,14 @@
     </div>
     <script src="script.js" defer></script>
     <script src="products.js" defer></script>
+    <script>
+        const loader = document.querySelector("#loader-cont");
+        window.addEventListener("load", function () {
+            setInterval(() => {
+                loader.style.display = "none";
+            }, 1000);
+        });
+    </script>
 </body>
 
 </html>

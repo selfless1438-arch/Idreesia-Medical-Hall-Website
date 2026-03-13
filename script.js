@@ -69,14 +69,14 @@ let offers = [
   {
     id: 'HB1',
     name: 'Collagen + B-12',
-    img: 'herbiotic_images/1.jpg',
+    img: 'herbiotic_images/1.webp',
     disc: '7%',
 
   },
   {
     id: 'HB2',
     name: 'Biotin Plus + Biotin Shampoo',
-    img: 'herbiotic_images/2.png',
+    img: 'herbiotic_images/2.webp',
     disc: '5%',
 
   },
@@ -121,7 +121,7 @@ function showRandomOffer() {
   `;
   document.getElementById("offerLink").href =
     "https://wa.me/923035591912?text=" + encodeURIComponent(message);
-  modalTimer();
+  window.addEventListener("load", modalTimer());
 }
 
 window.onload = showRandomOffer();
