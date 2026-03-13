@@ -34,45 +34,46 @@ body {
 }
 
 
-/* HTML: <div class="loader"></div> */
-.loader {
+/* Loader */
+
+#loader-cont {
     position: fixed;
-    z-index: 1000000000000;
     left: 0;
-    height: 15px;
-    aspect-ratio: 4;
-    --_g: no-repeat radial-gradient(farthest-side, #000 90%, #0000);
-    background:
-        var(--_g) left,
-        var(--_g) right;
-    background-size: 25% 100%;
-    display: grid;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    opacity: 0;
+    align-items: center;
+    background-color: #E0E2E6;
+    z-index: 10000000000000000000000000000000;
+    transition: all 0.3s ease;
 }
 
-.loader:before,
-.loader:after {
-    content: "";
-    height: inherit;
-    aspect-ratio: 1;
-    grid-area: 1/1;
-    margin: auto;
+#loader-cont.active {
+    opacity: 1;
+    display: flex;
+}
+
+#loader-cont .loader {
+
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    transform-origin: -100% 50%;
-    background: #000;
-    animation: l49 1s infinite linear;
+    border-top: 10px solid var(--accent-color);
+    border-bottom: 10px solid var(--primary-color);
+    animation: rotate 2s linear infinite;
 }
 
-.loader:after {
-    transform-origin: 200% 50%;
-    --s: -1;
-    animation-delay: -.5s;
-}
+@keyframes rotate {
+    0% {
 
-@keyframes l49 {
+        rotate: 0deg;
+    }
 
-    58%,
     100% {
-        transform: rotate(calc(var(--s, 1)*1turn))
+        rotate: 360deg;
     }
 }
 
@@ -279,7 +280,7 @@ section {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10000000000000;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1209,7 +1210,7 @@ footer .footer-cont .content .brand .location:hover span {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100000000000000;
+    z-index: 1000000000;
     display: flex;
     justify-content: center;
     align-items: center;

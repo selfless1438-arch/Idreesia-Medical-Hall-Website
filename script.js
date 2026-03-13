@@ -2,6 +2,12 @@ const slides = document.querySelectorAll('.slider');
 const container = document.querySelector('.slider-cont');
 let index = 0;
 
+const loader = document.querySelector("#loader-cont");
+loader.classList.add("active");
+document.addEventListener("DOMContentLoaded", () => {
+  loader.classList.remove("active");
+});
+
 function showSlide() {
   container.style.transform = `translateX(-${index * 100}%)`;
   index = (index + 1) % slides.length;
